@@ -2582,6 +2582,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1717066381330908977, guid: 904eac46d691d1c4e915a8a60a74c259, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 2681a2c284f50744eb12cd9f9a15158e, type: 2}
+    - target: {fileID: 4851160333752329518, guid: 904eac46d691d1c4e915a8a60a74c259, type: 3}
+      propertyPath: velocidadX
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4851160333752329518, guid: 904eac46d691d1c4e915a8a60a74c259, type: 3}
+      propertyPath: fuerzaSalto
+      value: 7.3
+      objectReference: {fileID: 0}
     - target: {fileID: 7918847844434912511, guid: 904eac46d691d1c4e915a8a60a74c259, type: 3}
       propertyPath: m_Name
       value: Personaje

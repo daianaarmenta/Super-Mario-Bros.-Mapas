@@ -2,33 +2,32 @@ using UnityEngine;
 
 public class MuevePersonaje : MonoBehaviour
 {
+    [SerializeField] private float velocidadX;
+    [SerializeField] private float fuerzaSalto;
 
-    //Velocidades
-    public float velocidadX; //cuantos m va a recorrer por segundo
-
-    [SerializeField] //Permite al editor de Unity acceder a la variables
-    private float velocidadY;
-    //Necesito que el personaje se mueva
     private Rigidbody2D rb;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
-        //Inicializar rb 
         rb = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
         float movHorizontal = Input.GetAxis("Horizontal");
-        float movVertical = Input.GetAxis("Vertical");
 
-        if (movVertical > 0) {
-        rb.linearVelocity = new Vector2(movHorizontal*velocidadX, movVertical*velocidadY);
+        // Movimiento horizontal
+        rb.linearVelocity = new Vector2(movHorizontal * velocidadX, rb.linearVelocity.y);
 
-        } else {
-            rb.linearVelocity = new Vector2(movHorizontal*velocidadX, rb.linearVelocityY);
+        // Salto solo si está en el suelo
+        if (Input.GetKeyDown(KeyCode.UpArrow) && EstadoPersonaje.enPiso)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0); // resetear salto acumulado
+            rb.AddForce(Vector2.up * fuerzaSalto, ForceMode2D.Impulse);
         }
     }
 }
+
+
+
 

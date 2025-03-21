@@ -3,9 +3,9 @@
     <engine:VisualElement name="Contenedor" class="contenedor" style="flex-grow: 1;">
         <engine:Label text="Tarea Unity" class="titulo" />
         <engine:VisualElement class="botones" style="flex-grow: 1;">
-            <engine:Button text="Jugar" class="boton" />
-            <engine:Button text="Ayuda" class="boton" />
-            <engine:Button text="Créditos" class="boton" />
+            <engine:Button text="Jugar" name="Jugar" class="boton" />
+            <engine:Button text="Ayuda" name="Ayuda" class="boton" />
+            <engine:Button text="Créditos" name="Creditos" class="boton" />
         </engine:VisualElement>
         <engine:Label text="Daiana Armenta A01751408" class="texto" />
     </engine:VisualElement>

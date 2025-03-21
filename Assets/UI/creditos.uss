@@ -1,0 +1,48 @@
+.contenedor {
+    width: 100%;
+    background-color: rgb(65, 62, 62);
+}
+
+.titulo {
+    font-size: 80px;
+    width: 100%;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    color: rgb(197, 161, 27);
+    -unity-text-align: lower-center;
+    align-self: center;
+    justify-content: center;
+    background-color: rgb(84, 83, 83);
+    height: 20%;
+    align-content: auto;
+}
+
+.contenedor {
+    width: 100%;
+    background-color: rgb(65, 62, 62);
+    align-self: auto;
+    align-content: auto;
+}
+
+.boton {
+    width: 100px;
+    height: 100px;
+    align-self: flex-end;
+    background-image: url("project://database/Assets/Saurabh_Studio/UI%20button%20and%20hallowing%20element%20pack%205/gold/CLOSE-1.png?fileID=2800000&guid=c0b6c38e965c69c4baaec76c33e68cf3&type=3#CLOSE-1");
+}
+
+.texto {
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    align-items: auto;
+    -unity-text-align: upper-center;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    font-size: 40px;
+    color: rgb(202, 177, 85);
+}

@@ -1,0 +1,9 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/creditos.uss?fileID=7433441132597879392&amp;guid=09dd76bc4de157340a87994ed0c905e5&amp;type=3#creditos" />
+    <engine:VisualElement class="contenedor" style="flex-grow: 1;">
+        <engine:Label text="Créditos" class="titulo">
+            <engine:Button text="Button" class="boton" style="color: rgb(255, 255, 255); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; font-size: 0; translate: -10px -20px; border-left-color: rgba(116, 116, 116, 0); border-right-color: rgba(116, 116, 116, 0); border-top-color: rgba(116, 116, 116, 0); border-bottom-color: rgba(116, 116, 116, 0); background-color: rgba(196, 196, 196, 0);" />
+        </engine:Label>
+        <engine:Label text="Label" class="texto" />
+    </engine:VisualElement>
+</engine:UXML>

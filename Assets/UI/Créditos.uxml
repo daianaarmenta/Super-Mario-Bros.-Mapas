@@ -1,7 +1,10 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/creditos.uss?fileID=7433441132597879392&amp;guid=09dd76bc4de157340a87994ed0c905e5&amp;type=3#creditos" />
-    <engine:VisualElement name="contenedor" class="contenedor" style="flex-grow: 1; overflow: hidden; position: absolute; width: 100%; height: 100%; bottom: 0;">
-        <engine:Label text="Créditos" name="Titulo" class="titulo" />
-        <engine:Label text="Lorem ipsum dolor sit amet,&#10;consectetur adipiscing elit. Nam sit amet molestie magna..." name="creditos" class="texto" style="text-overflow: clip; white-space: normal;" />
+    <engine:VisualElement name="contenedor" class="contenedor" style="flex-grow: 1;">
+        <engine:Button name="botonRegreso" class="boton" style="background-image: url(&quot;project://database/Assets/Saurabh_Studio/UI%20button%20and%20hallowing%20element%20pack%205/gold/CLOSE-1.png?fileID=2800000&amp;guid=c0b6c38e965c69c4baaec76c33e68cf3&amp;type=3#CLOSE-1&quot;); background-color: rgba(188, 188, 188, 0); border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0);" />
+        <engine:Label text="Créditos" name="titulo" class="titulo" style="-unity-font-style: bold; font-size: 80px; color: rgb(255, 185, 0);" />
+        <engine:VisualElement name="creditos" class="creditos" style="flex-grow: 1;">
+            <engine:Label text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec nisi ut urna porta porta. Praesent venenatis ac lorem non auctor. Nunc elit magna, ullamcorper eget justo id, elementum porta justo. Nullam blandit quis nibh vel placerat. Aenean ultricies nisi vel nisl feugiat posuere. Nunc finibus faucibus dui in tempor. Vivamus rhoncus fringilla nisl et luctus. Donec non sapien ante. Ut eget imperdiet justo. Fusce fringilla arcu sed nunc accumsan consequat. Phasellus venenatis ullamcorper sapien quis auctor. Donec tempus semper ligula et viverra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur tincidunt varius ipsum eu rutrum. Curabitur sed est pellentesque, bibendum risus sed, sollicitudin dolor." name="texto" class="texto" style="font-size: 40px; color: rgb(226, 187, 101); text-overflow: clip; white-space: normal;" />
+        </engine:VisualElement>
     </engine:VisualElement>
 </engine:UXML>

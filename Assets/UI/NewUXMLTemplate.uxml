@@ -2,10 +2,10 @@
     <Style src="project://database/Assets/UI/contenedor.uss?fileID=7433441132597879392&amp;guid=1cb5da08cf474f743947394d81bfab89&amp;type=3#contenedor" />
     <engine:VisualElement name="Contenedor" class="contenedor" style="flex-grow: 1;">
         <engine:Label text="Tarea Unity" class="titulo" />
-        <engine:VisualElement class="botones" style="flex-grow: 1;">
-            <engine:Button text="Jugar" name="Jugar" class="boton" />
-            <engine:Button text="Ayuda" name="Ayuda" class="boton" />
-            <engine:Button text="Créditos" name="Creditos" class="boton" />
+        <engine:VisualElement class="botones" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.31); border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px; margin-top: 50px;">
+            <engine:Button text="Jugar" name="Jugar" class="boton" style="background-image: url(&quot;project://database/Assets/Saurabh_Studio/UI%20button%20and%20hallowing%20element%20pack%205/Button%206/7.png?fileID=2800000&amp;guid=d3dd507249881854fbaa9d44a29f0d89&amp;type=3#7&quot;); width: 400px; align-self: center; height: 200px;" />
+            <engine:Button text="Ayuda" name="Ayuda" class="boton" style="background-image: url(&quot;project://database/Assets/Saurabh_Studio/UI%20button%20and%20hallowing%20element%20pack%205/Button%206/7.png?fileID=2800000&amp;guid=d3dd507249881854fbaa9d44a29f0d89&amp;type=3#7&quot;); align-self: center; width: 400px; height: 200px;" />
+            <engine:Button text="Créditos" name="Creditos" class="boton" style="background-image: url(&quot;project://database/Assets/Saurabh_Studio/UI%20button%20and%20hallowing%20element%20pack%205/Button%206/7.png?fileID=2800000&amp;guid=d3dd507249881854fbaa9d44a29f0d89&amp;type=3#7&quot;); align-self: center; width: 400px; height: 200px;" />
         </engine:VisualElement>
         <engine:Label text="Daiana Armenta A01751408" class="texto" />
     </engine:VisualElement>

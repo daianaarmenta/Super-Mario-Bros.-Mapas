@@ -1,0 +1,11 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/contenedor.uss?fileID=7433441132597879392&amp;guid=1cb5da08cf474f743947394d81bfab89&amp;type=3#contenedor" />
+    <engine:VisualElement name="Contenedor" class="contenedor" style="flex-grow: 1;">
+        <engine:Label text="Tarea Unity" class="titulo" />
+        <engine:VisualElement class="botones" style="flex-grow: 1;">
+            <engine:Button name="botonRegreso" class="boton" />
+            <engine:Label text="What is Lorem Ipsum?&#10;&#10;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages...&#10;" class="ayuda" />
+        </engine:VisualElement>
+        <engine:Label text="Daiana Armenta A01751408" class="texto" />
+    </engine:VisualElement>
+</engine:UXML>

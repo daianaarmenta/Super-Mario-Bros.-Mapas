@@ -1,48 +1,34 @@
 .contenedor {
     width: 100%;
+    height: 100%; /* Altura completa de la pantalla */
     background-color: rgb(65, 62, 62);
+    overflow: hidden; /* Oculta el texto fuera del contenedor */
+    position: relative; /* Necesario para posicionar el texto de forma absoluta */
 }
 
 .titulo {
     font-size: 80px;
     width: 100%;
-    margin-top: 0;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 0;
     color: rgb(197, 161, 27);
-    -unity-text-align: lower-center;
-    align-self: center;
-    justify-content: center;
+    text-align: center; /* Centra el texto horizontalmente */
     background-color: rgb(84, 83, 83);
-    height: 20%;
-    align-content: auto;
-}
-
-.contenedor {
-    width: 100%;
-    background-color: rgb(65, 62, 62);
-    align-self: auto;
-    align-content: auto;
-}
-
-.boton {
-    width: 100px;
-    height: 100px;
-    align-self: flex-end;
-    background-image: url("project://database/Assets/Saurabh_Studio/UI%20button%20and%20hallowing%20element%20pack%205/gold/CLOSE-1.png?fileID=2800000&guid=c0b6c38e965c69c4baaec76c33e68cf3&type=3#CLOSE-1");
+    padding: 20px 0; /* Espaciado interno */
+    position: absolute; /* Fija el título en la parte superior */
+    top: 0;
+    left: 0;
+    z-index: 1; /* Asegura que el título esté sobre el texto */
 }
 
 .texto {
     width: 100%;
-    height: 100%;
-    align-self: center;
-    align-items: auto;
-    -unity-text-align: upper-center;
-    margin-top: 50px;
-    margin-right: 50px;
-    margin-bottom: 50px;
-    margin-left: 50px;
+    position: absolute; /* Posicionamiento absoluto para el desplazamiento */
+    top: 100%; /* Comienza fuera del contenedor (abajo) */
+    left: 0;
     font-size: 40px;
     color: rgb(202, 177, 85);
+    text-align: center; /* Centra el texto */
+    white-space: normal; /* Permite saltos de línea */
+    padding: 0 50px; /* Márgenes laterales */
+    /* Elimina la transición para un control más preciso */
 }
+

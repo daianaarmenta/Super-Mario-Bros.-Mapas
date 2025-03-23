@@ -3,36 +3,52 @@ using UnityEngine.UIElements;
 
 public class CreditosScroller : MonoBehaviour
 {
-    [SerializeField] private float scrollSpeed = 30f; // Velocidad de desplazamiento
-    private Label creditosText;
-    private VisualElement contenedor;
-    private float currentTop; // Variable para mantener la posición actual de top
+    public float velocidadScroll = 50f;
 
-    void Start()
+    private VisualElement creditos;
+    private Label texto;
+    private float startY;
+    private float endY;
+    private bool animacionIniciada = false;
+
+    void OnEnable()
     {
-        // Obtén las referencias al contenedor y al texto
-        var uiDocument = GetComponent<UIDocument>();
-        contenedor = uiDocument.rootVisualElement.Q<VisualElement>("contenedor");
-        creditosText = uiDocument.rootVisualElement.Q<Label>("creditos");
+        var root = GetComponent<UIDocument>().rootVisualElement;
+        creditos = root.Q<VisualElement>("creditos");
+        texto = root.Q<Label>("texto");
 
-        // Establecer la posición inicial del texto fuera de la pantalla (en la parte inferior)
-        currentTop = contenedor.resolvedStyle.height;
-        creditosText.style.top = currentTop;
+        // Esperar a que se carguen los estilos y tamaños
+        Invoke(nameof(InicializarAnimacion), 0.1f);
+    }
+
+    void InicializarAnimacion()
+    {
+        startY = creditos.resolvedStyle.height;
+        texto.style.top = startY;
+
+        endY = -texto.resolvedStyle.height;
+
+        animacionIniciada = true;
     }
 
     void Update()
     {
-        // Mover el texto hacia arriba
-        currentTop -= scrollSpeed * Time.deltaTime;
-        creditosText.style.top = currentTop;
+        if (!animacionIniciada) return;
 
-        // Si el texto sale completamente del contenedor, reiniciamos la posición
-        if (currentTop + creditosText.resolvedStyle.height < 0)
+        float currentTop = texto.style.top.value.value;
+
+        // Mover hacia arriba
+        currentTop -= velocidadScroll * Time.deltaTime;
+        texto.style.top = currentTop;
+
+        // Reiniciar cuando llegue al final
+        if (currentTop <= endY)
         {
-            currentTop = contenedor.resolvedStyle.height; // Reinicia al final del contenedor
+            texto.style.top = startY;
         }
     }
 }
+
 
 
 

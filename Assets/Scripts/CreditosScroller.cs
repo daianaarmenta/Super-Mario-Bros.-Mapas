@@ -3,7 +3,7 @@ using UnityEngine.UIElements;
 
 public class CreditosScroller : MonoBehaviour
 {
-    public float velocidadScroll = 50f;
+    [SerializeField] private float velocidadScroll;
 
     private VisualElement creditos;
     private Label texto;

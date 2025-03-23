@@ -14,9 +14,9 @@ public class MenuController : MonoBehaviour
     {
         menu = GetComponent<UIDocument>();
         var root = menu.rootVisualElement;
-        botonJugar = root.Q<Button>("Jugar"); //Tiene que coincidir con el nombre del botón en el archivo UXML
-        botonAyuda = root.Q<Button>("Ayuda");
-        botonCreditos = root.Q<Button>("Creditos");
+        botonJugar = root.Q<Button>("jugar"); //Tiene que coincidir con el nombre del botón en el archivo UXML
+        botonAyuda = root.Q<Button>("ayuda");
+        botonCreditos = root.Q<Button>("creditos");
         //Callbacks
         botonJugar.RegisterCallback<ClickEvent, String>(IniciarJuego, "NivelMario");
         botonAyuda.RegisterCallback<ClickEvent, String>(IniciarJuego, "Ayuda");
